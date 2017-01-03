@@ -1,3 +1,4 @@
+heroku labs:enable user-env-compile
 require_relative 'boot'
 
 require 'rails/all'
