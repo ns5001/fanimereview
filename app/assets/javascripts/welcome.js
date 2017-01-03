@@ -12,9 +12,9 @@ function getAnimes() {
     success: function(response){
       var html = ''
       for (var i=0;i<response.length;i++) {
-        html+= `<h2>${response[i].name}</h2>`
-        html+= `<h4>${response[i].pic}</h4>`
-        html+= `<h4>${response[i].reccomendations}</h4>`
+        html+= `<h2>Name:${response[i].name}</h2>`
+        html+= `<h4>Pic:${response[i].pic}</h4>`
+        html+= `<h4>reccomendations:${response[i].reccomendations}</h4>`
         html+= `<br>`
       }
       $('.animes').append(html)
@@ -29,13 +29,13 @@ function getRated() {
     success: function(response){
       var html = ''
       for (var i=0;i<response.length;i++) {
-        html+=  `<h3>${response[i].anime.name}</h3>`
-        html+=  `<p>${response[i].review }</p>`
-        html+=  `<h3>${response[i].art}</h3>`
-        html+=  `<h3>${response[i].character}</h3>`
-        html+=  `<h3>${response[i].plot}</h3>`
-        html+=  `<h3>${response[i].likes}</h3>`
-        html+=  `<h3>${response[i].user.username}</h3>`
+        html+=  `<h3>Anime:${response[i].anime.name}</h3>`
+        html+=  `<p>Review:${response[i].review }</p>`
+        html+=  `<h3>Art:${response[i].art}</h3>`
+        html+=  `<h3>Character:${response[i].character}</h3>`
+        html+=  `<h3>Plot:${response[i].plot}</h3>`
+        html+=  `<h3>Likes:${response[i].likes}</h3>`
+        html+=  `<h3>By:${response[i].user.username}</h3>`
         html+=  `<br>`
       }
       $('.rated').append(html)
@@ -51,9 +51,9 @@ function getReccomended(){
     success: function(response){
       var html = ''
       for (var i=0;i<response.length;i++) {
-        html+= `<h2>${response[i].name}</h2>`
-        html+= `<h4>${response[i].pic}</h4>`
-        html+= `<h4>${response[i].reccomendations}</h4>`
+        html+= `<h2>Name:${response[i].name}</h2>`
+        html+= `<h4>Pic:${response[i].pic}</h4>`
+        html+= `<h4>reccomendations:${response[i].reccomendations}</h4>`
         html+= `<br>`
       }
       $('.reccomended').append(html)
