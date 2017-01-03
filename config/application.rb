@@ -1,5 +1,5 @@
 require_relative 'boot'
-config.assets.initialize_on_precompile = false
+
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
@@ -13,3 +13,6 @@ module Fanime
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+
+config.assets.initialize_on_precompile = false
