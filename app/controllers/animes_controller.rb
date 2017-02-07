@@ -25,8 +25,10 @@ class AnimesController < ApplicationController
   end
 
   def topThree
-    respond_to do |format|
-      format.json { render json: Anime.find_by(id: params[:id]).topThree }
+    if params[:id]
+      respond_to do |format|
+        format.json { render json: Anime.find_by(id: params[:id]).topThree }
+      end
     end
   end
 
