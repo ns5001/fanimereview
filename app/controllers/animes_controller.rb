@@ -1,4 +1,5 @@
 class AnimesController < ApplicationController
+
   def index
     respond_to do |format|
       format.json { render json: Anime.all}
@@ -12,7 +13,21 @@ class AnimesController < ApplicationController
   end
 
   def show
-    binding.pry
-
+    respond_to do |format|
+      format.json { render json: Anime.find_by(id: params[:id])}
+    end
   end
+
+  def searchAnime
+    respond_to do |format|
+      format.json { render json: Anime.searchFor(params["user_search"])}
+    end
+  end
+
+  def topThree
+    respond_to do |format|
+      format.json { render json: Anime.find_by(id: params[:id]).topThree }
+    end
+  end
+
 end

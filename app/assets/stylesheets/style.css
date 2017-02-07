@@ -4,6 +4,20 @@
     margin: 0;
     height: 600px;
     overflow: scroll;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+.friends {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
 }
 
 
@@ -13,6 +27,20 @@
   margin: 0;
   height: 600px;
   overflow: scroll;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+.reviews {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
 }
 
 .reccomended {
@@ -21,4 +49,32 @@
   margin: 0;
   height: 600px;
   overflow: scroll;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+
+.write {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 200px;
+  overflow: scroll;
+  width: 250px;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+.reccomendations {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+
 }

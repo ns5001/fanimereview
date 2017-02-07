@@ -6,4 +6,8 @@ class Rating < ApplicationRecord
     self.all.sort { |a,b| b.likes <=> a.likes }
   end
 
+  def self.top_three(id)
+    self.all.where(anime_id: id).sort { |a,b| b.likes <=> a.likes }
+  end
+
 end

@@ -1,27 +1,14 @@
-<h1>Fanime Reviews</h1>
-<br>
-<br>
-
-<ul >
-              <li>
-                <% if user_signed_in? %>
-                   <%= link_to "Log Out", destroy_user_session_path(current_user)%>
-
-                <% else %>
-                          <li><%= link_to "Sign Up", new_user_registration_path %></li>
-                <% end %>
-              </li>
-              <%  if !user_signed_in? %>
-                <li><%= link_to "Sign In", new_user_session_path %></li>
-              <% end %>
-</ul>
-
 <div style="width: 2000px;">
 
- <div class="animes" style="float: left; width: 200px;"><h1>Animes</h1></div>
-
+<div class="write" >
+  <h3>Write a review</h3>
+   <a href="/users/sign_in"><h3>Sign In</h3></a>
+   <a href="/ratings/new"><h3>Continue as guest</h3></a>
+</div>
+<br>
+ <div class="animes" style="float: left; width: 200px;"><h1>Animes</h1><p><input id = "this" type="text" name="anime" placeholder="Search Anime"><button onclick="myFunction()">Search</button></p></div>
  <div class="rated" style="float: left; width: 800px;"><h1>Highest Rated Reviews</h1></div>
 
- <div class="reccomended"style="float: left; width: 200px;"><h1>Top Reccomended Animes</h1></div>
+ <div class="reccomended"style="float: left; width: 200px;"><h1>Top Recommended Animes</h1></div>
  <br style="clear: left;" />
 </div>

@@ -1,3 +1,3 @@
 class RatingSerializer < ActiveModel::Serializer
-  attributes :id, :review, :art, :plot, :character, :likes, :reccomendations, :user, :anime
+  attributes :id, :user, :anime, :plot, :art, :character, :overall, :review, :likes
 end

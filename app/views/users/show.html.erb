@@ -1,1 +1,25 @@
-show
+
+  <div class="user_info">
+    <h2><%= @user.username %></h2><br>
+    <img src="<%=@user.profile_pic%>" alt=""></img>
+  </div>
+  <br>
+
+
+  Add Friends
+  <form class="searchNames">
+    <input id= "user_name" type="text" name="user_name" placeholder="Enter Name">
+    <button type="submit" name="button">Search</button>
+  </form>
+
+  <div id="foundNames"></div>
+
+  <a href="/users/inbox">Messages</a>
+
+  <div style="width: 2000px;">
+   <div class="friends" style="float: left; width: 200px;"><h1>Friends</h1></div>
+   <div class="reviews" style="float: left; width: 800px;"><h1>Reviews</h1></div>
+
+   <div class="reccomendations"style="float: left; width: 200px;"><h1>Reccomendations</h1></div>
+   <br style="clear: left;" />
+  </div>
