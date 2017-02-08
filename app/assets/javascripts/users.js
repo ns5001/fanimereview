@@ -156,6 +156,7 @@ function searchNames(){
              }
            $('div#foundNames').append(html)}
       } else {
+        $('div#foundNames').html("")
         $('div#foundNames').append(`No user found named ${inserted_name}`)
       }
      }

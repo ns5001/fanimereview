@@ -20,11 +20,13 @@ function showTopThree(){
       type: 'get',
       url: `/animes/topThree/${id}`,
       success: function(response){
-        var html = ''
-        for (var i=0;i<response.length;i++) {
-          html+= `<div class="animeReview${response.id}">`
-          html+= `<p>${response[i].review}</p>`
-          html+= `</div>`
+        var html = ``
+        if (response != undefined) {
+          for (var i=0;i<response.length;i++) {
+            html+= `<div class="animeReview${response.id}">`
+            html+= `<p>${response[i].review}</p>`
+            html+= `</div>`
+          }
         }
         return html
       }

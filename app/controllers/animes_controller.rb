@@ -25,7 +25,7 @@ class AnimesController < ApplicationController
   end
 
   def topThree
-    if params[:id]
+    if params[:id] != "undefined"
       respond_to do |format|
         format.json { render json: Anime.find_by(id: params[:id]).topThree }
       end

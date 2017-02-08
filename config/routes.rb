@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to =>'welcome#index'
+
   get '/animes/topThree/:id', to: "animes#topThree"
   get '/ratings/highest', to: "ratings#highestRated"
   get '/animes/reccomended', to: "animes#reccomended"
@@ -22,7 +22,9 @@ Rails.application.routes.draw do
   get 'messages/:id/message_data', to: 'messages#message_data'
   get "/messages/chain/:id" => 'messages#messageHistory'
 
+  resources :welcomes
 
+  root 'welcomes#index'
   resources :users
   resources :animes
   resources :ratings
