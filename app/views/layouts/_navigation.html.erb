@@ -1,29 +1,25 @@
 <nav id="topNav" class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
             <div class="navbar-header" style="font-family:Chathura">
-              <a class="navbar-brand" style="font-family:Chathura" href="/">
-                <span><i class="ion-ios-analytics-outline"></i>FanimeReview</span>
+              <a class="navbar-brand" href="/">
+                <span>FanimeReview</span>
               </a>
             </div>
-            <a class="navbar-brand page-scroll" style="font-family:Chathura" href="/"></a>
         </div>
 
         <div class="navbar-collapse collapse" id="bs-navbar">
-            <ul class="nav navbar-nav navbar-right">
+            <div class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
               <% if current_user %>
-                <li><a class="page-scroll" href="/users/sign_out" method="get">Sign Out</a></li>
+                <li><a href="/users/sign_out" method="get">Sign Out</a></li>
                 <li><%= link_to "MyProfile", user_path(current_user) %></li>
               <% else %>
-                <li><a class="page-scroll" href="/users/sign_up" method="get">Create Account</a></li>
+                <li><a href="/users/sign_up" method="get">Create Account</a></li>
               <% end %>
             </ul>
+            </div>
         </div>
     </div>
 </nav>
