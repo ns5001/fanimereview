@@ -45,7 +45,7 @@ function getAnimes() {
         html+= `</div><br>`
         html+= getTopThree(response[i].id)
       }
-        $('.animes').append(html)
+        $('#animes').append(html)
       }
     })
   }
@@ -97,7 +97,7 @@ function getRated() {
         html+=  `<h3>Likes: ${response[i].likes}</h3>`
         html+=  `<br>`
       }
-      $('.rated').append(html)
+      $('#rated').append(html)
     }
   })
 }
@@ -115,10 +115,11 @@ function getReccomended(){
         html+= `<h4>recommendations:${response[i].reccomendations}</h4>`
         html+= `<br>`
       }
-      $('.reccomended').append(html)
+      $('#reccomended').append(html)
     }
   })
 }
+
 
 function myFunction() {
   if (document.getElementById("this") != null) {

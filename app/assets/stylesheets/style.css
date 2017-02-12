@@ -1,12 +1,49 @@
-.animes {
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
-    height: 600px;
-    overflow: scroll;
-    border-radius: 25px;
-    border: 2px solid #73AD21;
-    padding: 20px;
+#review-portal {
+  width: 300px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #73AD21;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 25px;
+}
+
+#main > .nav-tabs {
+  border-bottom: 2px solid #73AD21;
+}
+
+#main > .nav-tabs > li {
+  margin-bottom: -2px;
+}
+
+#main > .nav-tabs > li > a {
+  border-top: 2px solid #73AD21;
+  border-right: 2px solid #73AD21;
+  border-left: 2px solid #73AD21;
+  border-radius: 4px 4px 0 0;
+  background-color: #73AD21;
+  color: white;
+}
+
+#main > .nav-tabs > li.active > a {
+  background-color: white;
+  color: #73AD21;
+}
+
+#main > .tab-content {
+  height: 600px;
+  overflow-y: auto;
+  color: #73AD21;
+  background-color: white;
+  padding: 5px 15px;
+  border-right: 2px solid #73AD21;
+  border-bottom: 2px solid #73AD21;
+  border-left: 2px solid #73AD21;
+}
+
+#main > .tab-content > .tab-pane {
+
 }
 
 .friends {
@@ -20,18 +57,6 @@
   padding: 20px;
 }
 
-
-.rated {
-  padding: 10px;
-  border: 5px solid gray;
-  margin: 0;
-  height: 600px;
-  overflow: scroll;
-  border-radius: 25px;
-    border: 2px solid #73AD21;
-    padding: 20px;
-}
-
 .reviews {
   padding: 10px;
   border: 5px solid gray;
@@ -41,29 +66,6 @@
   border-radius: 25px;
     border: 2px solid #73AD21;
     padding: 20px;
-}
-
-.reccomended {
-  padding: 10px;
-  border: 5px solid gray;
-  margin: 0;
-  height: 600px;
-  overflow: scroll;
-  border-radius: 25px;
-  border: 2px solid #73AD21;
-  padding: 20px;
-}
-
-
-#review-portal {
-  width: 300px;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid #73AD21;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 25px;
 }
 
 a.btn {
