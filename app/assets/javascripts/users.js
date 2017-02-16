@@ -32,7 +32,7 @@ function getReccomendedAnime() {
         if (response) {
         var html = ``
         for (var i=0;i<response.length;i++){
-          html += `<p>You reccomended ${response[i].anime.name} to ${response[i].receiver.username}</p>`
+          html += `<p>You reccomended "${response[i].anime.name}" to ${response[i].receiver.username}</p>`
         }
        $('.reccomendations').append(html)
       }

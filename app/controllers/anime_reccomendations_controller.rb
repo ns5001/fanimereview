@@ -12,5 +12,19 @@ class AnimeReccomendationsController < ApplicationController
       flash[:message] = "You current have no freinds to reccomend to"
       redirect_to :back
     end
+    @user = current_user.id
   end
+
+  def create
+    binding.pry
+    @anime_reccomendation = AnimeReccomendation.create(anime_reccomendations_params)
+    redirect_to user_session_path
+  end
+
+  private
+
+  def anime_reccomendations_params
+    params.require(:anime_reccomendation).permit(:anime_id, :receiver_id, :user_id)
+  end
+
 end

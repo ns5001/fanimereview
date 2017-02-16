@@ -1,0 +1,19 @@
+<%= form_for AnimeReccomendation.new do |f| %>
+
+  <div class="field">
+    <%= f.label :anime %><br />
+    <%= f.collection_select :anime_id, Anime.order(:id),:id,:name, required: true%>
+  </div>
+
+  <div class="field">
+    <%= f.label :friend %><br />
+    <%= f.collection_select :receiver_id, User.friends,:id,:username, required: true%>
+  </div>
+
+  <%= f.hidden_field :user_id, value: @user %>
+
+  <div class="actions">
+    <%= f.submit "Create Reccomendation" %>
+  </div>
+
+<% end %>
