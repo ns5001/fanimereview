@@ -29,6 +29,8 @@ Rails.application.routes.draw do
   resources :animes
   resources :ratings
   resources :messages
+  resources :anime_reccomendations
+  resources :rating_reccomendations
 
 
   get "/ratings/topthree/:id" => 'ratings#top_three'

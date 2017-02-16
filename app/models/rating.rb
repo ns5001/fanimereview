@@ -10,4 +10,8 @@ class Rating < ApplicationRecord
     self.all.where(anime_id: id).sort { |a,b| b.likes <=> a.likes }
   end
 
+  def self.order_for()
+    
+  end
+
 end

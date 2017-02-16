@@ -6,4 +6,13 @@ class RatingReccomendationsController < ApplicationController
       end
     end
   end
+
+  def new
+    if current_user.friends.length < 1
+      flash[:message] = "You current have no freinds to reccomend to"
+      redirect_to :back
+    end
+  end
+
+
 end

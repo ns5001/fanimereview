@@ -38,6 +38,11 @@ has_many :received_rating_reccomendations, class_name: 'RatingReccomendation', f
     Connection.where(user:self, status:true).or(Connection.where(receiver:self, status:true))
   end
 
+  def self.friends
+    binding.pry
+    Connection.where(user:self.last, status:true).or(Connection.where(receiver:self.last, status:true))
+  end
+
   def reviews
     Rating.where(user:self)
   end

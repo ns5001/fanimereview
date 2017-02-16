@@ -1,14 +1,17 @@
 
-<div id="review-portal">
-  To write a review:
-  <br>
-  <a class="btn btn-default" href="/users/sign_in">Sign In</a>
-  <a class="btn btn-default" href="/ratings/new">Continue as Guest</a>
-</div>
+<% if !current_user %>
+  <div id="review-portal">
+    To write a review:
+    <br>
+    <a class="btn btn-default" href="/users/sign_in">Sign In</a>
+    <a class="btn btn-default" href="/ratings/new">Continue as Guest</a>
+  </div>
+<% end %>
+
 
 <br>
 
-<div id="main" class="container">	
+<div id="main" class="container">
 	<ul id="main-nav" class="nav nav-tabs">
 		<li class="active"><a href="#top-reviews" data-toggle="tab">Reviews</a></li>
 		<li><a href="#anime-list" data-toggle="tab">Animes</a></li>
@@ -24,7 +27,7 @@
    <h1>Animes</h1>
 		</div>
 
-  <div id="top-reccomendations" class="tab-pane">	
+  <div id="top-reccomendations" class="tab-pane">
    <h1>Top Recommended Animes</h1>
 		</div>
 	</div> <!-- end #main-body -->

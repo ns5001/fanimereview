@@ -5,6 +5,10 @@
   </div>
   <br> -->
 
+  <% if flash[:message] %>
+   <div class="notice"><%= flash[:message] %></div>
+ <% end %>
+
 
   Add Friends
   <form class="searchNames">
@@ -14,9 +18,13 @@
 
   <div id="foundNames"></div>
 
-  <a href="/users/inbox">Messages</a>
+<a class="btn btn-default" href="/users/inbox">Messages</a>
 
 <a class="btn btn-default" href="/ratings/new">Write a review</a>
+
+<a class="btn btn-default" href="/rating_reccomendations/new">Reccomend a review!</a>
+
+<a class="btn btn-default" href="/anime_reccomendations/new">Reccomend an anime!</a>
 
   <div style="width: 2000px;">
    <div class="friends" style="float: left; width: 200px;"><h1>Friends</h1></div>

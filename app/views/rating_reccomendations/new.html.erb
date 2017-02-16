@@ -1,0 +1,17 @@
+<%= form_for RatingReccomendation.new do |f| %>
+
+  <div class="field">
+    <%= f.label :rating %><br />
+    <%= f.collection_select :rating_id, Rating.order(:overall),:id,:review, required: true%>
+  </div>
+
+  <div class="field">
+    <%= f.label :friend %><br />
+    <%= f.collection_select :receiver_id, User.friends,:id,:username, required: true%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Create Reccomendation" %>
+  </div>
+
+<% end %>
