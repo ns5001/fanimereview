@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).on('turbolinks:load', function() {
   getAnimes()
   getRated()
   getReccomended()
@@ -6,6 +6,7 @@ $( document ).ready(function() {
   getTopThree()
   showTopThree()
 });
+
 
 
 function showTopThree(){
