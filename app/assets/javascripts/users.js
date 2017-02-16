@@ -48,7 +48,7 @@ function getReccomendedReviews() {
       if (response) {
         var html = ``
         for (var i=0;i<response.length;i++){
-          html += `<p>You reccomended ${response[i].review_id} to ${response[i].receiver_id}</p>`
+          html += `<p>You reccomended "${response[i].rating.review}" to ${response[i].receiver.username}</p>`
         }
        $('.reccomendations').append(html)
      }
