@@ -39,8 +39,15 @@ has_many :received_rating_reccomendations, class_name: 'RatingReccomendation', f
   end
 
   def self.friends
-    binding.pry
-    Connection.where(user:self.last, status:true).or(Connection.where(receiver:self.last, status:true))
+    ary = []
+    Connection.where(user:self.last, status:true).each do |connection|
+      ary << User.find_by(id: connection.receiver_id)
+    end
+
+    Connection.where(receiver:self.last, status:true).each do |connection|
+      ary << User.find_by(id: connection.user_id)
+    end
+    ary 
   end
 
   def reviews

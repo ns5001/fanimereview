@@ -222,7 +222,7 @@ function receivedRequests(response) {
   for(var i=0;i<response.length;i++){
 
     html += `<div id="received-request-${response[i].id}"<p><img src="${response[i].user.profile_pic}"></p>`
-    html += `<p>${response[i].user.name} wants to connect!</p>`
+    html += `<p>${response[i].user.username} wants to connect!</p>`
 
     html += `<button class="accept-request" id="${response[i].id}" type="submit">Accept</button>`
     html += `<button id="${response[i].id}" class="decline-request" type="submit">Decline</button>`
