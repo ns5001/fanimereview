@@ -1,0 +1,102 @@
+#review-portal {
+  width: 350px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 25px;
+}
+
+#main > .nav-tabs {
+  border-bottom: 2px solid #73AD21;
+}
+
+#main > .nav-tabs > li {
+  margin-bottom: -2px;
+}
+
+#main > .nav-tabs > li > a {
+  border-top: 2px solid #73AD21;
+  border-right: 2px solid #73AD21;
+  border-left: 2px solid #73AD21;
+  border-radius: 4px 4px 0 0;
+  background-color: #73AD21;
+  color: white;
+}
+
+#main > .nav-tabs > li.active > a {
+  background-color: white;
+  color: #73AD21;
+}
+
+#main > .tab-content {
+  height: 600px;
+  overflow-y: auto;
+  color: #73AD21;
+  background-color: white;
+  padding: 5px 15px;
+  border-right: 2px solid #73AD21;
+  border-bottom: 2px solid #73AD21;
+  border-left: 2px solid #73AD21;
+}
+
+#main > .tab-content > .tab-pane {
+
+}
+
+.friends {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+}
+
+.reviews {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+a.btn {
+  background-color: #73AD21;
+  color: white;
+  font-size: 15px;
+}
+
+.reccomendations {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
