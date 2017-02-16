@@ -45,7 +45,7 @@ function getAnimes() {
         html+= `</div><br>`
         html+= getTopThree(response[i].id)
       }
-        $('#animes').append(html)
+        $('#anime-list').append(html)
       }
     })
   }
@@ -87,7 +87,7 @@ function getRated() {
         if (response[i].user.username == null) {
           html+=  `<h3>Review By: Guest User</h3>`
         }else{
-          html+=  `<h3>Review By: ${response[i].user.username }</h3>`
+          html+=  `<h3>Review By: ${response[i].user.username}</h3>`
         }
         html+=  `<h3>Art: ${response[i].art}</h3>`
         html+=  `<h3>Character: ${response[i].character}</h3>`
@@ -97,7 +97,7 @@ function getRated() {
         html+=  `<h3>Likes: ${response[i].likes}</h3>`
         html+=  `<br>`
       }
-      $('#rated').append(html)
+      $('#top-reviews').append(html)
     }
   })
 }
@@ -115,7 +115,7 @@ function getReccomended(){
         html+= `<h4>recommendations:${response[i].reccomendations}</h4>`
         html+= `<br>`
       }
-      $('#reccomended').append(html)
+      $('#top-recommendations').append(html)
     }
   })
 }
@@ -130,7 +130,7 @@ function myFunction() {
       dataType: 'json',
       data: {"user_search": search_name},
       success: function(response){
-        $('.animes').html = ""
+        $('#anime-list').html = ""
       }
     })
   }
