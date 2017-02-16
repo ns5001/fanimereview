@@ -1,0 +1,96 @@
+.animes {
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    height: 600px;
+    overflow: scroll;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+.friends {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+}
+
+
+.rated {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+.reviews {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+.reccomended {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+
+.write {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 200px;
+  overflow: scroll;
+  width: 250px;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+}
+
+.reccomendations {
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+  height: 600px;
+  overflow: scroll;
+  border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
