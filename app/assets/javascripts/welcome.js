@@ -8,7 +8,6 @@ $(document).on('turbolinks:load', function() {
 });
 
 
-
 function showTopThree(){
   $(document).on('click','.anAnime',function(event){
     $(`#${this.id}`).toggle()
@@ -46,7 +45,7 @@ function getAnimes() {
         html+= `<p>Pic:${response[i].pic}</p>`
         html+= `<h4>reccomendations:${response[i].reccomendations}</h4>`
         html+= `</div><br>`
-        html+= getTopThree(response[i].id)
+        // html+= getTopThree(response[i].id)
       }
         $('#anime-list').append(html)
       }
