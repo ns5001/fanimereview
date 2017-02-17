@@ -111,6 +111,7 @@ function getReccomended(){
     url: '/animes/reccomended.json',
     success: function(response){
       var html = ''
+      debugger;
       for (var i=0;i<response.length;i++) {
         html+= `<h2>${response[i].name}</h2>`
         html+= `<h4>Pic:${response[i].pic}</h4>`

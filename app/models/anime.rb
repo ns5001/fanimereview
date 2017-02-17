@@ -3,7 +3,8 @@ class Anime < ApplicationRecord
   has_many :anime_reccomendations
 
   def self.reccomended
-    self.all.sort { |a,b| b.reccomendations <=> a.reccomendations }
+    binding.pry
+    self.all.where(reccomendations > 0).sort { |a,b| b.reccomendations <=> a.reccomendations }
   end
 
   def self.searchFor(search_term)
