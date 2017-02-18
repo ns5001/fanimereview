@@ -1,25 +1,25 @@
 <nav id="topNav" class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <div class="navbar-header" style="font-family:Chathura">
-              <a class="navbar-brand" href="/">
-                <span>FanimeReview</span>
-              </a>
-            </div>
-        </div>
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<div class="navbar-header" style="font-family:Chathura">
+				<a class="navbar-brand" href="/">
+					<span>FanimeReview</span>
+				</a>
+			</div>
+		</div>
 
-        <div class="navbar-collapse collapse" id="bs-navbar">
-            <div class="nav navbar-nav navbar-right">
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-              <% if current_user %>
-                <li><a href="/users/sign_out" method="get">Sign Out</a></li>
-                <li><%= link_to "MyProfile", user_path(current_user) %></li>
-              <% else %>
-                <li><a href="/users/sign_up" method="get">Create Account</a></li>
-              <% end %>
-            </ul>
-            </div>
-        </div>
-    </div>
+		<div class="navbar-collapse collapse" id="bs-navbar">
+			<div class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav">
+						<li><a href="/">Home</a></li>
+					<% if current_user %>
+						<li><a href="/users/sign_out" method="get">Sign Out</a></li>
+						<li><%= link_to "MyProfile", user_path(current_user) %></li>
+					<% else %>
+						<li><a href="/users/sign_up" method="get">Create Account</a></li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+	</div>
 </nav>
