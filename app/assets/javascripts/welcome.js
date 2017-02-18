@@ -7,6 +7,9 @@ $(document).on('turbolinks:load', function() {
   showTopThree()
 });
 
+function testing() {
+  console.log("testing passed");
+}
 
 function showTopThree(){
   $(document).on('click','.anAnime',function(event){
