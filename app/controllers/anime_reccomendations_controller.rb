@@ -16,7 +16,7 @@ class AnimeReccomendationsController < ApplicationController
   end
 
   def create
-    binding.pry
+    # binding.pry
     @anime_reccomendation = AnimeReccomendation.create(anime_reccomendations_params)
     redirect_to user_session_path
   end

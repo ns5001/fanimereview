@@ -16,7 +16,7 @@ class RatingReccomendationsController < ApplicationController
   end
 
   def create
-    binding.pry
+    # binding.pry
     @rating_reccomendation = RatingReccomendation.create(rating_reccomendations_params)
     redirect_to user_session_path
   end
